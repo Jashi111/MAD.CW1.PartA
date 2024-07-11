@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "366819457141",
+    "project_id": "notehub-4d5ef",
+    "storage_bucket": "notehub-4d5ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366819457141:android:897a9bcb2a06a8f4e3203c",
+        "android_client_info": {
+          "package_name": "com.example.to_do_saver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFl3GLVeAL97Awsh1shwkRGvEk9OttvhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
