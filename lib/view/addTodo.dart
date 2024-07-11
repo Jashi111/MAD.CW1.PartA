@@ -79,7 +79,7 @@ class _AddTodoState extends State<AddTodo> {
                       style: const TextStyle(color: Colors.white),
                       decoration: const InputDecoration(
                         border: OutlineInputBorder(
-                          borderSide: BorderSide(width: 10.0), // Adjust the border width here
+                          borderSide: BorderSide(width: 10.0),
                         ),
                         hintText: 'Task Body',
                         hintStyle: TextStyle(color: Colors.white54),
@@ -156,12 +156,12 @@ class _AddTodoState extends State<AddTodo> {
                   dueDate: dueDateController.text,
                 );
               } else {
-                String newTaskBody = taskBodyController.text;
-                String updatedTaskBody = "${widget.todo!.taskBody}\n$newTaskBody";
+                //String newTaskBody = taskBodyController.text;
+                //String updatedTaskBody = "${widget.todo!.taskBody}\n$newTaskBody";
                 await updateTodo(
                   id: widget.todo!.id,
                   title: titleController.text,
-                  taskBody: updatedTaskBody,
+                  taskBody: taskBodyController.text,
                   dueDate: dueDateController.text,
                 );
               }
@@ -174,7 +174,7 @@ class _AddTodoState extends State<AddTodo> {
               titleController.clear();
               taskBodyController.clear();
               dueDateController.clear();
-              Navigator.pop(context); // Navigate back to home after adding/updating the todo
+              Navigator.pop(context);
             } catch (e) {
               print('Error adding/updating data to Firestore: $e');
               ScaffoldMessenger.of(context).showSnackBar(
